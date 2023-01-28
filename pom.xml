@@ -10,6 +10,9 @@
 	<properties>
 		<java-version>1.8</java-version>
 		<jackson.version>1.9.13</jackson.version>
+		<sonar.host.url>http://192.168.0.50:9000/</sonar.host.url>
+                <sonar.login>admin</sonar.login>
+                <sonar.password>123321</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
