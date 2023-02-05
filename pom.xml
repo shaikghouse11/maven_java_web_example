@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>api</groupId>
-	<artifactId>api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>java-web</artifactId>
+	<version>0.0.1</version>
 	<name>api</name>
 	<packaging>war</packaging>
 
@@ -47,6 +47,26 @@
 
 
 	</dependencies>
+
+<!-- can add in pom.xml to give nexus repository path -->
+<!-- Below line need to be added after "</dependencies>" tag -->
+
+		<distributionManagement>
+
+                <repository>
+                <id>nexus</id>
+                <name>Releases Nexus Repository</name>
+                <url>http://192.168.0.51:8081/repository/Standalone-release/</url>
+                </repository>
+
+                <snapshotRepository>
+                <id>nexus</id>
+                <name>Snapshot Nexus Repository </name>
+                <url>http://192.168.0.51:8081/repository/Standalone-snapshot/</url>
+                </snapshotRepository>
+
+
+        </distributionManagement>
 
 	<build>
 		<finalName>api</finalName>
